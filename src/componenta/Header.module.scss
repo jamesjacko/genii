@@ -1,0 +1,15 @@
+
+.header{
+	height: 42px;
+	background-color: var(--surface);
+	border-bottom: 1px solid var(--surfaceBorder);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-inline: 16px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}

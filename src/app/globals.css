@@ -1,0 +1,14 @@
+:root {
+  --surface: #131a1f;
+  --surfaceBorder: #1d282f;
+  --orange: #FF5A33;
+  --aqua: #04BF9D;
+  --primaryText: #75a3a9;
+};
+
+body, html {
+  background-color: var(--surface);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
