@@ -3,11 +3,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./GithubLink.module.scss";
 import clsx from "clsx";
 
-const GithubLink = (): React.JSX.Element => {
+type GithubLinkProps = {
+	owner?: string;
+	repo?: string;
+};
+
+const GithubLink = ({
+	owner,
+	repo,
+}: GithubLinkProps): React.JSX.Element => {
+	const href =
+		owner && repo
+			? `https://github.com/${owner}/${repo}`
+			: "https://github.com/users/jamesjacko/projects/1";
 	return (
 			<a
 				className={clsx(styles.link)}
-				href="https://github.com/users/jamesjacko/projects/1"
+				href={href}
 				target="_blank"
 			>
 				<FontAwesomeIcon icon={faGithub} height={20} />
