@@ -1,0 +1,26 @@
+.inlineFlex {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	&.spaceBetween{
+		justify-content: space-between;
+	}
+	&.center{
+		justify-content: center;
+	}
+	&.flexStart{
+		justify-content: flex-start;
+	}
+	&.flexEnd{
+		justify-content: flex-end;
+	}
+}
+.lh1 {
+	line-height: 1;
+}
+.hoverLink {
+	&:hover {
+		color: var(--orange);
+	}
+}

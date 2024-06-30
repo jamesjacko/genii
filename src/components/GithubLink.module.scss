@@ -5,4 +5,8 @@
 	gap: 4px;
 	color: currentColor !important;
 	text-decoration: none;
+	transition: color 0.3s ease-in-out;
+	&:hover {
+		color: var(--orange) !important;
+	}
 }
