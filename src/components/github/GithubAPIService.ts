@@ -13,7 +13,7 @@ export class GithubApiService {
 			repo,
 			path,
 		});
-		const text = await response.data.content;
+		const text = await "hello";
 		return text;
 	}
 }
